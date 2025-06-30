@@ -46,17 +46,17 @@ INSERT INTO reviews (
     rating
 )
 VALUES (
-    500,
-    500,
-    500,
-    'Вот это товар!!! Дайте ещё два!',
+    1000,
+    1000,
+    1000,
+    'Отличный товар, спасибо продавцу!',
     5
 );
 ```
 
 ## Проверяем сгенерированные данные (ключевые фразы, тональность, эмбеддинги)
 ```
-SELECT * FROM key_phrases WHERE review_id = 500;
-SELECT * FROM sentiment_analysis WHERE review_id = 500;
-SELECT * FROM review_embeddings WHERE review_id = 500;
+SELECT * FROM key_phrases WHERE review_id = 1000;
+SELECT * FROM sentiment_analysis WHERE review_id = 1000;
+SELECT * FROM review_embeddings WHERE review_id = 1000;
 ```
